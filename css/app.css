@@ -72,16 +72,19 @@ h6{
 
 .accordionHeader{
 	font-size: 2em;
+	
 } 
+
+.accordionHeader:hover{
+	text-decoration:underline;
+}
 
 .accordionLine{
 	/*display:none;*/
 	margin-top:0px;
 }
 
-a:hover + div{
-	display:block;
-}
+
 
 
 
@@ -283,7 +286,7 @@ z-index:3001;
   width:12px;
   height:auto;
   float:right;
-  margin-right:10px;
+  margin-right:10px !important; 
   margin-top:10px;
   -webkit-filter: opacity(.2);
   filter: opacity(.2);
