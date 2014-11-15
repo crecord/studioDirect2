@@ -89,7 +89,6 @@ h6{
 
 
 hr {
-	
 	border: none;
     height: 5px;
     /* Set the hr color */
@@ -310,5 +309,39 @@ z-index:3001;
     display:block;
     z-index:3000;
 }
-  
+
+
+
+.bottomLinks{
+	margin-right: 5%; 	
+}
+
+table tr td a h4{
+	display:inline; 
+	margin-bottom:0px; 
+}
+
+
+table tr td a h4:hover{
+	text-decoration:underline;
+}
+
+table tr td a .noHoverStyle:hover{
+	text-decoration:none;
+}
+
+table tr td h4{
+	margin-bottom:0px; 
+}
+
+table tr .small{
+	width:20%; 
+}
+table tr .bigz{
+	width:40%; 
+}
+
+table{
+	margin-bottom:10px; 
+}
 

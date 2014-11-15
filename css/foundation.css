@@ -2727,7 +2727,7 @@ meta.foundation-mq-topbar {
   .panel > :first-child {
     margin-top: 0; }
   .panel > :last-child {
-    margin-bottom: 0; }
+   }
   .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p, .panel li, .panel dl {
     color: #333333; }
   .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6 {
@@ -5300,7 +5300,7 @@ ul.off-canvas-list {
 table {
   background: white;
   margin-bottom: 1.25rem;
-  border: solid 1px #dddddd;
+  
   table-layout: auto; }
   table caption {
     background: transparent;
@@ -5325,7 +5325,6 @@ table {
       color: #222222; }
   table tr th,
   table tr td {
-    padding: 0.5625rem 0.625rem;
     font-size: 0.875rem;
     color: #222222;
     text-align: left; }
