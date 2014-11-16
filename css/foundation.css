@@ -139,7 +139,7 @@ select {
 
 .column,
 .columns {
-  padding-left: 0rem;
+  padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 100%;
   float: left; }
@@ -274,7 +274,7 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0rem;
+    padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     float: left; }
 
@@ -504,7 +504,7 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0rem;
+    padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     float: left; }
 
@@ -854,7 +854,7 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0rem;
+    padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     float: left; }
 
