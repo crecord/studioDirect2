@@ -282,8 +282,7 @@ z-index:3001;
 } 
 
 .cross{
-  width:12px;
-  height:auto;
+ 
   float:right;
   margin-right:10px !important; 
   margin-top:10px;
@@ -345,3 +344,8 @@ table{
 	margin-bottom:10px; 
 }
 
+
+.drawerImg{
+	margin-right:8px; 
+	margin-top:3px;
+}

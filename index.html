@@ -16,6 +16,7 @@
       <script src="js/menuBehavior.js"></script>
       <script src="js/scrollToTop.js"></script>
       <script src="js/footResize.js"></script>
+      <script src="js/svgConversion.js"></script>
       <!-- this links to the new custom css-->
       <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400italic' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800,700' rel='stylesheet' type='text/css'>
@@ -52,18 +53,18 @@
       	<aside class="right-off-canvas-menu">
         			
         			<ul class="off-canvas-list">
-          			<li><a class="info"><img src="img/icons_grey/info.png">Info</a></li>
-          			<li><a href="mailto:info@studiodirect.com"><img src="img/icons_grey/mail.png">Mail</a></li>
-          			<li><a href="http://www.facebook.com/" target="_blank"><img src="img/icons_grey/facebook.png">Facebook</a></li>
+          			<li><a class="info"><img class="drawerImg" src="img/iconSvg/grey_info.svg">Info</a></li>
+          			<li><a href="mailto:info@studiodirect.com"><img class="drawerImg" src="img/iconSvg/grey_mail.svg">Mail</a></li>
+          			<li><a href="http://www.facebook.com/" target="_blank"><img class="drawerImg" src="img/iconSvg/grey_facebook.svg">Facebook</a></li>
         			</ul>
     	</aside>
       <div id="menu-outer" class="sticky">
          <nav class="top-bar" data-topbar role="navigation"  >
             <div class="icons">
-               <a><img src="img/icons/info.png" class ="info icon"></a>
-               <a href="mailto:info@studiodirect.com"><img src="img/icons/mail.png" class ="icon"></a>
-               <a href="http://www.facebook.com/" target="_blank"><img src="img/icons/facebook.png" class ="icon"></a>
-               <a class="right-off-canvas-toggle" href="#"><img src="img/icons/hamburger.png" class ="hamburger" ></a>
+               <a><img src="img/iconSvg/info.svg" class ="info icon"></a>
+               <a href="mailto:info@studiodirect.com"><img src="img/iconSvg/mail.svg" class ="icon"></a>
+               <a href="http://www.facebook.com/" target="_blank"><img src="img/iconSvg/facebook.svg" class ="icon"></a>
+               <a class="right-off-canvas-toggle" href="#"><img src="img/iconSvg/hamburger.svg" class ="hamburger" ></a>
                
                
             </div>
@@ -81,7 +82,7 @@
      <div id ='info' style = "display:none;">
             <div class="overlay" ></div>
             <div class='bubble'  style="display:block;">
-               <img onclick="closeInfoWindow();" class='cross' src="img/icons/infoCross.png" style='cursor: pointer;'>
+               <img onclick="closeInfoWindow();" class='cross' src="img/iconSvg/cross.svg" style='cursor: pointer;'>
                <div class='about'>
                <h2> What is Studio Direct? </h2>
                <br>
@@ -295,7 +296,7 @@
         <div id ='faqs' style = "display:none;">
             <div class="overlay" ></div>
             <div class='bubble'  style="display:block;">
-               <img onclick="closeFaqsWindow();" class='cross' src="img/icons/infoCross.png" style='cursor: pointer;'>
+               <img onclick="closeFaqsWindow();" class='cross' src="img/iconSvg/cross.svg" style='cursor: pointer;'>
                <div class='about'>
                <h2> Here are the Facts: </h2>
                <br>
