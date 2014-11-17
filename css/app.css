@@ -330,6 +330,7 @@ z-index:3001;
 }
 
 
+tr:nth-child(odd) {background: #FFF}
 
 .bottomLinks{
 	margin-right: 5%; 	
@@ -395,4 +396,14 @@ html,
     top: 0;
     width: 100%;
     z-index: 99;
+}
+
+
+.columnImg{
+height:250px; 
+}
+
+
+.columnImg img{
+float:left; 
 }
