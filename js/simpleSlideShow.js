@@ -1,4 +1,4 @@
-var slideImgs = ["img1_hands.jpg", "img2_hands.png"];
+var slideImgs = ["img1_hands.jpg", "img2_hands.jpg"];
 var index =0; 
 
 $(function(){

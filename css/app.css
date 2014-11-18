@@ -41,7 +41,7 @@ h3{
 	font-family: 'Open Sans', sans-serif;  
 	
 	font-weight:bold;
-	font-size: 1em;
+	font-size: 1rem;
 	letter-spacing: 1px;
 	margin-bottom:5px; 
 } 
@@ -305,6 +305,7 @@ z-index:3001;
 
   .about{
   margin-left:40px; 
+  margin-right:40px; 
   margin-top:40px;
 } 
 
@@ -432,6 +433,22 @@ dd a hr{
 
 .content{
 	margin-top:19px;
+}
+
+
+/* http://css-tricks.com/snippets/css/sticky-footer/ */ 
+
+.siteContent {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -82px; 
+}
+.siteContent:after {
+  content: "";
+  display: block;
+}
+.siteFooter, .siteContent:after {
+  height: 82px; 
 }
 
 

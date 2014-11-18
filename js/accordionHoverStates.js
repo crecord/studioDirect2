@@ -4,11 +4,8 @@
          		console.log("hello");
          		$( "hr",".accordion-navigation").css("background-color","white");
              	var classes = $(this).attr('class').split(' ');
-             	console.log(classes);
              	if (classes.length ==1){
-
              		$( "hr",this).css("background-color","black"); 
-             		console.log("toot"); 
              	}
             });
             

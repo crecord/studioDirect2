@@ -18,6 +18,7 @@
       <script src="js/footResize.js"></script>
       <script src="js/scrollCorrection.js"></script>
       <script src="js/accordionHoverStates.js"></script>
+      <script src="js/accordionSlideAnimation.js"></script>
       <!-- this links to the new custom css-->
       <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400italic' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800,700' rel='stylesheet' type='text/css'>
@@ -25,6 +26,12 @@
       <!-- for the accordian action on the patron and artist page --> 
       <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
       <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+      
+      <link rel="icon" 
+      type="image/png" 
+      href="img/favicon.png">
+      
+      
    </head>
    <body onresize="onResize()">
       <img src="img/background/arrow_Left.png"  class="arrow left" id= "arrowLeft">
@@ -92,7 +99,8 @@
             
             
 
-            <article id="article"> <div class="siteContent">
+            <article id="article">
+             <div class="siteContent">
                <div class="modelContent">
                   <div class="row">
                      <div class="large-12 columns">
@@ -654,11 +662,15 @@
                   </div>
                </div>
                <!-- ending the artistsContent div tag. -->
-               <!-- footer --> 
+               
+               
+            </div> 
+            <!-- footer --> 
+            <footer class="siteFooter">
                <div class = "row">
                   <div class="large-12 columns">
                      <div class = "panel">
-                        <hr style= "margin-top:100px; margin-bottom:0px;">
+                        <hr style= "margin-bottom:0px; margin-top:60px;">
                         <table style="width:100%">
                            <tr>
                               <td class="bigz" style= "text-align:left;">
@@ -687,8 +699,9 @@
                      </div>
                   </div>
                </div>
-            </div> </article>
-            <!-- ending the content div tag. -->
+               </footer>
+               </article>
+            <!-- ending the siteContent div tag. -->
             <a class="exit-off-canvas"></a>
          </div>
          <!-- ending of inner wrap --> 

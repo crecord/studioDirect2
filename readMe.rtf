@@ -5,31 +5,52 @@
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
 \f0\fs24 \cf0 \
-\ul Reminders: \ulnone \
-make sure to update the Facebook link in all 3 locations!\
-There is a fake pdf as a place holder for the Studio Direct Packet - be sure to replace it. \
+
+\b \ul Reminders: 
+\b0 \ulnone \
+make sure to update the Facebook / email link in all 3 locations!\
+\
+There is a fake pdf as a place holder for the Studio Direct Packet - be sure to replace it. If you keep the file name the same you won\'92t need to modify the html.\
+\
+There is a fake icon (Favicon). Again if you keep the file name the same you won\'92t need to modify the html.\
+\
 In the slideshow under the header \'93a New Artist to Patron Model\'94 keep all image the same width or the whole page will wiggle\
 \
 note that the \'93back to top\'94 link disappears when the screen is small. I did this so that the footer still looks good when the screen is small. \
 \
 \
 \
+
+\b \ul How Tos 
+\b0 \ulnone \
+to add images to the cover image slideshow. open \'93coverImgScripts.js\'94 and add the file names to the array called \'93bgImgs.\'94 For example to add a third image you would place the image in \'93img/background\'94 and edit the script to read: \
 \
-My hosting recommendation: NearlyFreeSpeech \
+	var bgImgs = ["BackGroundImg1.jpg", "BackGroundImg2.jpg" , "BackGroundImg3.jpg"];\
 \
 \
+You would do nearly the same thing to update the other slideshow. Except add the image to \'93img/theModel_Assets/slideshow\'94 and modify the array at the top of the \'93simpleslideShow.js\'94 file. \
+\
+\
+\
+
+\b \ul Some links
+\b0 \ulnone \
 This was a very annoying issue, but now it is fixed: \
 {\field{\*\fldinst{HYPERLINK "http://foundation.zurb.com/forum/posts/547-off-canvas-with-fixed-top-bar?page=3"}}{\fldrslt http://foundation.zurb.com/forum/posts/547-off-canvas-with-fixed-top-bar?page=3}}\
-\
-\
 Arrow Hover: \
 \pard\pardeftab720
 {\field{\*\fldinst{HYPERLINK "http://www.corelangs.com/css/box/hover.html"}}{\fldrslt 
 \fs26 \cf0 http://www.corelangs.com/css/box/hover.html}}
 \fs26 \
-\
 The nav: \
 \pard\pardeftab720
 {\field{\*\fldinst{HYPERLINK "http://css-tricks.com/centering-list-items-horizontally-slightly-trickier-than-you-might-think/"}}{\fldrslt \cf0 http://css-tricks.com/centering-list-items-horizontally-slightly-trickier-than-you-might-think/}}\
 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\fs24 \cf0 My hosting recommendation: NearlyFreeSpeech \
+\pard\pardeftab720
+
+\fs26 \cf0 \
 }
