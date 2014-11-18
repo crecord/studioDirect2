@@ -39,7 +39,7 @@ h2{
 
 h3{
 	font-family: 'Open Sans', sans-serif;  
-	font-size: 15px;
+	
 	font-weight:bold;
 	font-size: 1em;
 	letter-spacing: 1px;
@@ -97,18 +97,13 @@ h6.extraSpace{
 
 
 .accordionHeader{
-	font-size: 2em;
+	font-size: 1.8em;
 	
 } 
 
-.accordionHeader:hover{
-	text-decoration:underline;
-}
 
-.accordionLine{
-	/*display:none;*/
-	margin-top:0px;
-}
+
+
 
 
 
@@ -121,6 +116,7 @@ hr {
     color: #333; /* old IE */
     background-color: #333; /* Modern Browsers */
     margin-top:0px; 
+    
 } 
 
 
@@ -293,11 +289,11 @@ border-radius: 10px;
 z-index:3001;
 }
 
-.content{
+.siteContent{
   padding-top:50px;
 }
 
-.content img {
+.siteContent img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -428,6 +424,15 @@ margin-bottom:20px;
 margin-top:20px; 
 }
 
+
+dd a hr{
+	margin-bottom:0px; 
+	background-color:white;
+}
+
+.content{
+	margin-top:19px;
+}
 
 
 
