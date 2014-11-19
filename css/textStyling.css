@@ -1,0 +1,99 @@
+/* All the text styling*/ 
+
+/* big centers*/ 
+h1{
+	font-family: 'Open Sans', sans-serif;  
+	font-size: 2.2em;
+	font-weight:bold;
+	text-align: center; 
+	margin-top: 20px; 
+	margin-bottom:-5px !important;
+	letter-spacing: 2px;
+} 
+/*sub heading*/ 
+h2{
+	font-family: 'Open Sans', sans-serif;  
+	font-weight:bold;
+	font-size: 1.5em;
+	margin-bottom:0px !important;
+	letter-spacing: 1px;
+} 
+/*bold body text*/ 
+
+h3{
+	font-family: 'Open Sans', sans-serif;  
+	
+	font-weight:bold;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	margin-bottom:5px; 
+} 
+a h3:hover{
+	text-decoration:underline;
+}
+
+
+/*regular body text*/ 
+
+
+h4 {
+	font-family: 'Open Sans', sans-serif;  
+	font-size: 0.80em;
+	margin-bottom:20px;
+} 
+
+
+/*this is all for the structure section of the model content*/ 
+
+h4.title {
+	margin-bottom:0px; 
+}
+
+h4.subItem {
+	margin-bottom:0px; 
+	margin-left:10px; 
+}
+h4.subSubItem {
+	margin-bottom:0px; 
+	margin-left:20px; 
+}
+
+/*italic subheadings*/ 
+h5{
+	font-family: 'Open Sans', sans-serif;  
+	font-size: 1.1em;
+	font-style: italic;
+	margin-top: -3px;
+	
+}
+
+/*extra bold sub, sub headings*/ 
+
+h6{
+	font-family: 'Open Sans', sans-serif;  
+	font-size: .74em;
+	/* indicates extra bold*/ 
+	font-weight:800;
+	margin-bottom:1px;
+	
+} 
+
+h6.extraSpace{
+	padding-bottom:15px;
+}
+
+/*accordion headers for the artist and patrons section*/ 
+/* they are smaller so they fit in one line*/
+
+.accordionHeader{
+	font-size: 1.8em;
+	
+} 
+
+
+/* this is the hover text for the main menu items*/
+.hover{
+	font-family: 'Noto Serif', serif;    
+	font-size: 25px;
+	font-style: italic;
+}

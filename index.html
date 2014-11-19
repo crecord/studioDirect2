@@ -1,13 +1,19 @@
 <!doctype html>
 <html class="no-js" lang="en">
    <head>
+   	<!-- Code by Caroline Record-->
+   	<!-- last modified: Nov. 18, 2014-->
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Studio Direct</title>
+      
+      <!-- zerb foundation framework-->
       <link rel="stylesheet" href="css/foundation.css" />
       <script src="js/vendor/modernizr.js"></script>
       <script src="js/vendor/jquery.js"></script>
       <script src="js/foundation.min.js"></script>
+      
+      <!-- custom scripts-->
       <script src="js/coverImgScripts.js"></script>
       <script src="js/appearOnHover.js"></script>
       <script src="js/lightBox.js"></script>
@@ -19,14 +25,16 @@
       <script src="js/scrollCorrection.js"></script>
       <script src="js/accordionHoverStates.js"></script>
       <script src="js/accordionSlideAnimation.js"></script>
-      <!-- this links to the new custom css-->
+      
+      <!-- the Fonts-->
       <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400italic' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800,700' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" href="css/app.css">
-      <!-- for the accordian action on the patron and artist page --> 
-      <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-      <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
       
+      <!-- this links to the new custom css-->
+      <link rel="stylesheet" href="css/app.css">
+      <link rel="stylesheet" href="css/textStyling.css">
+
+      <!-- the icon that shows up on the top of the tab on the web browser-->
       <link rel="icon" 
       type="image/png" 
       href="img/favicon.png">
@@ -34,9 +42,14 @@
       
    </head>
    <body onresize="onResize()">
+   
+   	  <!-- navigation arrows for the cover image-->
       <img src="img/background/arrow_Left.png"  class="arrow left" id= "arrowLeft">
       <img src="img/background/arrow_Right.png" class="arrow right" id= "arrowRight">
+      
+      <!-- invisible div that the menu scrolls to, to get a peak of the content-->
       <div id = "scrollToMe" > </div>
+      
       <!-- the Hover text -->
       <div class ="hoverText">
          <center>
@@ -52,7 +65,7 @@
          </center>
       </div>
       
-        <!-- info window -->
+        <!-- info lightbox window -->
         <!-- This is located out of the scrollOverBody tag for a reason! otherwise an error will occur when you press info from the hamburger slide out menu -->
             <div id ='info' style = "display:none;">
                <div class="overlay" ></div>
@@ -68,6 +81,7 @@
                </div>
             </div>
       
+      <!-- this is all the content that scrolls over the cover image -->
       <div class=" scrollOverBody off-canvas-wrap" data-offcanvas>
          <div class=" inner-wrap" id="scrollOverBody">
             <!-- this is the side nav for when the screen is small -->
@@ -79,8 +93,10 @@
                </ul>
             </aside>
             
+            <!-- this is the main menu -->
             <div id="menu-outer" class="header">
                <nav class="top-bar" data-topbar role="navigation"  >
+               <!-- these are the icon for when there is room for them -->
                   <div class="icons">
                      <a><img src="img/iconSvg/info.svg" class ="info icon"></a>
                      <a href="mailto:info@studiodirect.com"><img src="img/iconSvg/mail.svg" class ="icon"></a>
@@ -98,16 +114,20 @@
             </div>
             
             
-
+			<!-- all of the content is in this tag including the footer -->
             <article id="article">
+            <!-- all of the content is in this tag excluding the footer -->
              <div class="siteContent">
+             <!-- This is all the content for the model page -->
                <div class="modelContent">
                   <div class="row">
                      <div class="large-12 columns">
                         <h1 > A NEW ARTIST TO PATRON MODEL</h1>
                      </div>
                   </div>
+                  <!-- It is wrapped in all these divs for foundation to work -->
                   <div class="row">
+                  <!-- this tag specifies the width of the content -->
                      <div class="large-12 columns">
                         <div class="panel">
                            <hr class="lineNoSpace">
@@ -138,7 +158,7 @@
                               INVESTING IN CREATIVITY
                            </h2>
                            <!-- column 1 for invest in creativity --> 
-                           
+                           <!-- note: the leftAlign tag is accounting for some automatic styling that foundations is doing -->
                            <div class="large-6 medium-6 columns leftAlign">
                               <h4>
                                  Introducing STUDIO DIRECT: Your chance to support an emerging local artist, to endorse creative pursuit, and to ensure that you are getting the year’s only direct discount on my artwork. STUDIO DIRECT brings together a small community of people eager to invest in art in a new & exciting way. 
@@ -158,7 +178,7 @@
                            <h5> 
                               Okay, so how does this work? 
                            </h5>
-                           <!-- column 1 for invest in creativity --> 
+                           <!-- column 1 for structure --> 
                            <div class="large-6 medium-6 columns leftAlign">
                               <h6>1 ARTIST</h6>
                               <h4>Seth Clark</h4>
@@ -172,7 +192,7 @@
                               <h4>8 Paintings Available at $2,500 each <br>Retail Value: $3,500 - $4,000 <br>Average Size: 9 square ft. (e.g. 36” x 36”) <br>Patron Discount: 30% - 40%
                               </h4>
                            </div>
-                           <!-- column 2 for invest in creativity --> 
+                           <!-- column 2 for structure --> 
                            <div class="large-6 medium-6 columns leftAlign">
                               <h6>YOUR PAINTING</h6>
                               <h4>
@@ -220,7 +240,7 @@
                            <h5> 
                               What are the expectations of the partnership?
                            </h5>
-                           <!-- column 1 for invest in CONTEXT --> 
+                           <!-- column 1 for invest in RELATIONSHIP --> 
                            <div class="large-6 medium-6 columns leftAlign">
                               <h6 class= "extraSpace">ARTIST EXPECTATIONS</h6>
                               <h4 class="title">WELCOME PACKET</h4>
@@ -251,7 +271,7 @@
                               <h4 class="subItem">signed with certificate of authenticity</h4>
                               <br>
                            </div>
-                           <!-- column 2 for invest in CONTEXT --> 
+                           <!-- column 2 for invest in RELATIONSHIP --> 
                            <div class="large-6 medium-6 columns leftAlign">
                               <h6 class= "extraSpace">PATRONS EXPECTATIONS</h6>
                               <h4 class="title">SIGNED CONTRACT</h4>
@@ -288,7 +308,8 @@
                            <h5> 
                               What will your money be used for?
                            </h5>
-                           <!-- column 1 for invest in CONTEXT --> 
+                           <!-- note: the text gets a little smaller in here. To fix change "em" to "rem" in stylesheet--> 
+                           <!-- column 1 for invest in BUDGET --> 
                            <div class="large-6 medium-6 columns leftAlign">
                               <h6 class="extraSpace">SURVIVAL</h6>
                               <table class="budgetTable">
@@ -339,7 +360,7 @@
                                  </tr>
                               </table>
                            </div>
-                           <!-- column 2 for invest in CONTEXT --> 
+                           <!-- column 2 for invest in BUDGET --> 
                            <div class="large-6 medium-6 columns leftAlign">
                               <h6 class="extraSpace">CAREER</h6>
                               <table class="budgetTable">
@@ -409,7 +430,7 @@
                            <h5> 
                               How do I participate?
                            </h5>
-                           <!-- column 1 for invest in CONTEXT --> 
+                           <!-- column 1 for invest in APPLY --> 
                            <div class="large-6 medium-6 columns leftAlign">
                               <h4>
                                  If you are interested in being one of the STUDIO DIRECT Patrons or have any questions about the program, please contact me.
@@ -420,7 +441,7 @@
                                  Phone: 555 555 5555                     
                               </h4>
                            </div>
-                           <!-- column 2 for invest in CONTEXT --> 
+                           <!-- column 2 for invest in APPLY --> 
                            <div class="large-6 medium-6 columns leftAlign">
                               <h6>
                                  There are only 8 paintings available for purchase! Please apply early for the best chance at being part of STUDIO DIRECT.
@@ -442,15 +463,16 @@
                            <img src="img/theModel_Assets/img3_packet.png" >
                            
                            
-                           <!-- column 1 for invest in CONTEXT --> 
+                           <!-- column 1 for invest in IMPLEMENTATION --> 
                            <div class="large-6 medium-6 columns leftAlign">
+                           <!-- special styling on this image to make it sit correctly, will need to change if the image changes size --> 
                            <div class="columnImg"><img style="margin-top:30px;" src="img/theModel_Assets/patronGuide.png" ></div>
                               <h6 class="extraSpace">PATRON GUIDE</h6>
                               <h4>
                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint.                    
                               </h4>
                            </div>
-                           <!-- column 2 for invest in CONTEXT --> 
+                           <!-- column 2 for invest in IMPLEMENTATION --> 
                            <div class="large-6 medium-6 columns leftAlign">
                             <div class="columnImg"><img src="img/theModel_Assets/contract.png" ></div>
                               <h6 class="extraSpace">THE CONTRACT</h6>
@@ -479,6 +501,7 @@
                               </h3>
                            </center>
                            <hr>
+                           <!-- this is the lightbox for the FAQS --> 
                            <div id ='faqs' style = "display:none;">
                               <div class="overlay" ></div>
                               <div class='bubble'  style="display:block;">
@@ -496,6 +519,7 @@
                      </div>
                   </div>
                </div>
+               <!-- this is all the content for the patron's page --> 
                <div class="patronsContent" style = "display:none;" >
                   <div class="row">
                      <div class="large-12 columns">
@@ -519,6 +543,9 @@
                         </div>
                      </div>
                   </div>
+                  
+                  <!-- this is sliding accordion section for the patron's section--> 
+                  <!-- the accordion uses foundations with some modifications in "accordionSlideAnimation.js"--> 
                   <div class="row">
                      <div class="large-12 columns">
                         <div class="panel">
@@ -526,10 +553,10 @@
                               <dd class="accordion-navigation">
                                  <a href="#panel5">
                                     <h1 class= "accordionHeader">BUILD RELATIONSHIPS WITH NEW PATRONS</h1>
+                                    <!-- each of these "hr" tags are white by default and they toggle on and off black on hover and when the content is active --> 
+                                    <!-- see accordionHoverStates.js for code--> 
                                     <hr > 
                                  </a>
-                                 
-                                    
                                 
                                  <div id="panel5" class="content">
                                     <h3>   
@@ -579,6 +606,7 @@
                   </div>
                </div>
                <!-- ending the patronsContent div tag. -->
+               <!-- this is all the content for the artists' page --> 
                <div class="artistsContent" style = "display:none;" >
                   <div class="row">
                      <div class="large-12 columns">
@@ -611,9 +639,7 @@
                                     <h1 class= "accordionHeader">BUILD RELATIONSHIPS WITH NEW PATRONS</h1>
                                     <hr > 
                                  </a>
-                                 
-                                    
-                                
+                                  
                                  <div id="panel1" class="content">
                                     <h3>   
                                        Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -665,7 +691,8 @@
                
                
             </div> 
-            <!-- footer --> 
+            
+            <!-- the footer --> 
             <footer class="siteFooter">
                <div class = "row">
                   <div class="large-12 columns">
@@ -690,6 +717,7 @@
                                  </a>
                               </td>
                               <td style="text-align:center; float:right;">
+                              <!-- keeps styling consistent without looking like a clickable link-->
                                  <a style="cursor:default" >
                                     <h4 class ="noHoverStyle">© 2014 Seth Clark Art & Design L.L.C.</h4>
                                  </a>
@@ -702,6 +730,7 @@
                </footer>
                </article>
             <!-- ending the siteContent div tag. -->
+            <!-- This link allows you to close the hamburger drawer when you click anywhere else on the page -->
             <a class="exit-off-canvas"></a>
          </div>
          <!-- ending of inner wrap --> 

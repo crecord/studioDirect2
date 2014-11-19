@@ -1,3 +1,9 @@
+/* all of the custom CSS - besides the text styling */
+/* note that the foundations CSS has also been modified */
+
+
+/* creates the cover image effect, is controlled by coverImgScript.js */
+
 * { margin: 0; padding: 0; }
 		
 		html { 
@@ -10,158 +16,21 @@
 
 
 body{
-	/* Overriding the foundation css so that the studio direct image in visible */
+	/* Overriding the foundation css so that the studio direct image is visible */
 	background-color:transparent;
 	
 }	
 
 
-/* big centers*/ 
-
-h1{
-	font-family: 'Open Sans', sans-serif;  
-	font-size: 2.2em;
-	font-weight:bold;
-	text-align: center; 
-	margin-top: 20px; 
-	margin-bottom:-5px !important;
-	letter-spacing: 2px;
-} 
-/*sub heading*/ 
-h2{
-	font-family: 'Open Sans', sans-serif;  
-	font-weight:bold;
-	font-size: 1.5em;
-	margin-bottom:0px !important;
-	letter-spacing: 1px;
-} 
-/*bold body text*/ 
-
-h3{
-	font-family: 'Open Sans', sans-serif;  
-	
-	font-weight:bold;
-	font-size: 1rem;
-	letter-spacing: 1px;
-	margin-bottom:5px; 
-} 
-a h3:hover{
-	text-decoration:underline;
-}
-
-
-/*regular body text*/ 
-
-
-h4 {
-	font-family: 'Open Sans', sans-serif;  
-	font-size: 0.80em;
-	margin-bottom:20px;
-} 
-
-h4.title {
-	margin-bottom:0px; 
-}
-
-h4.subItem {
-	margin-bottom:0px; 
-	margin-left:10px; 
-}
-h4.subSubItem {
-	margin-bottom:0px; 
-	margin-left:20px; 
-}
-
-h5{
-	font-family: 'Open Sans', sans-serif;  
-	font-size: 1.1em;
-	font-style: italic;
-	margin-top: -3px;
-	
-}
-
-/*extra bold sub, sub headings*/ 
-
-h6{
-	font-family: 'Open Sans', sans-serif;  
-	font-size: .74em;
-	/* indicates extra bold*/ 
-	font-weight:800;
-	margin-bottom:1px;
-	
-} 
-
-h6.extraSpace{
-	padding-bottom:15px;
-}
-
-
-.accordionHeader{
-	font-size: 1.8em;
-	
-} 
-
-
-
-
-
-
-
-
-
-hr {
-	border: none;
-    height: 4px;
-    /* Set the hr color */
-    color: #333; /* old IE */
-    background-color: #333; /* Modern Browsers */
-    margin-top:0px; 
-    
-} 
-
-
-
-
-.hover{
-	font-family: 'Noto Serif', serif;    
-	font-size: 25px;
-	font-style: italic;
-}
-
-#scrollToMe{
-	position:relative; 
-	top:60%; 
-	width: 0px;
-	height: 0px;  
-
-}
-
-
-.hoverText{
-	position:relative; 
-	height:50px; 
-	top:100%;
-	width:400px;
-	margin-left:auto; 
-	margin-right:auto; 
-	margin-top:-95px;
-}
-
-.foggyBackground{
-	background-color: rgba(100%, 100%, 100%, 0.5);
-} 
-
-
+/*styling for all the content that scrolls over the background image*/
 .scrollOverBody{
 	background-color:white;
 	position:relative; 
 	top:100%; 
 	width: auto; 
-	/* this is the sum of the height of hover text and the height of the navigation bar -95*/ 
 } 
 
-
-
+/* the arrows for rotating the background cover image*/ 
 .arrow {
 position:fixed;
 top: 40%;
@@ -184,15 +53,15 @@ filter: opacity(.2);
 left:2%;
 }
 
-
 .right{
  left:96%; 
 }
 
 
-/* right, down, amount of blur, border all around border*/ 
+/* main menu styling*/
 #menu-outer {
 	text-align: center;
+	/* right, down, amount of blur, border all around border*/ 
 	-webkit-box-shadow: 0 10px 20px -8px #d8d7d7;
 	   -moz-box-shadow: 0 10px 20px -8px #d8d7d7;
 	        box-shadow: 0 10px 20px -8px #d8d7d7;
@@ -215,21 +84,7 @@ left:2%;
 	margin-right:10px; 
 }
 
-.table {
-	display: table;
-	margin: 0 auto;
-}
 
-ul#horizontal-list {
-	/*min-width: 696px;*/
-	list-style: none;
-	display: inline;
-	-webkit-padding-start: 0px;
-	}
-	ul#horizontal-list li {
-		display: inline;
-	}
-	
 nav.top-bar{
 	background-color:white;
 }
@@ -263,6 +118,80 @@ nav.top-bar{
 	font-weight:800;
 } 
 
+.table {
+	display: table;
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	list-style: none;
+	display: inline;
+	-webkit-padding-start: 0px;
+	}
+	ul#horizontal-list li {
+		display: inline;
+	}
+
+
+
+
+.hoverText{
+	position:relative; 
+	height:50px; 
+	top:100%;
+	width:400px;
+	margin-left:auto; 
+	margin-right:auto; 
+	margin-top:-95px;
+}
+
+/* this is the foggy background for the hover */ 
+.foggyBackground{
+	background-color: rgba(100%, 100%, 100%, 0.5);
+} 
+
+/*end of main menu styling*/ 
+
+/* the styling for the lines*/
+hr {
+	border: none;
+    height: 4px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+    margin-top:0px; 
+    
+} 
+
+
+/* invisible div to scroll too to get a peek of the content*/
+#scrollToMe{
+	position:relative; 
+	top:60%; 
+	width: 0px;
+	height: 0px;  
+
+}
+
+
+
+
+
+
+.siteContent{
+  padding-top:50px;
+}
+
+.siteContent img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  }
+  
+
+/* Light box styling */
+
 	
 .about p{
   -webkit-margin-before: 0em;
@@ -288,20 +217,6 @@ background: #fff;
 border-radius: 10px;
 z-index:3001;
 }
-
-.siteContent{
-  padding-top:50px;
-}
-
-.siteContent img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-  }
-  
-
-/* Light box styling */
 
   .about{
   margin-left:40px; 
@@ -337,7 +252,7 @@ z-index:3001;
     z-index:3000;
 }
 
-
+/* the table in the budget section styling*/ 
 tr:nth-child(odd) {background: #FFF}
 
 .bottomLinks{
@@ -362,6 +277,7 @@ table tr td h4{
 	margin-bottom:0px; 
 }
 
+/*sizing of the columns*/ 
 table tr .small{
 	width:20%; 
 }
@@ -374,22 +290,28 @@ table{
 }
 
 
+.budgetTable{
+ 	width:300px;
+}
+
+/* the placement for the icons in the off canvas menu*/
 .drawerImg{
 	margin-right:8px; 
 	margin-top:3px;
 }
 
+
+/* this corrects for a column align issue that foundation creates*/
 .leftAlign{
 padding-left:0px; 
 padding-right:25px; 
 } 
 
-.budgetTable{
- 	width:300px;
-}
 
 
 
+/* this is to deal with the issue documented in this post*/ 
+/* http://foundation.zurb.com/forum/posts/547-off-canvas-with-fixed-top-bar?page=3*/ 
 article,
 body,
 html,
@@ -419,13 +341,14 @@ float:left;
 
 
 
-
+/* just making spacing tweaks*/
+/* may be an issue on mobile*/ 
 div.large-6.medium-6.columns.leftAlign{
 margin-bottom:20px; 
 margin-top:20px; 
 }
 
-
+/* this is styling for the accordion menu hover lines*/ 
 dd a hr{
 	margin-bottom:0px; 
 	background-color:white;
@@ -435,7 +358,7 @@ dd a hr{
 	margin-top:19px;
 }
 
-
+/* footer styling*/ 
 /* http://css-tricks.com/snippets/css/sticky-footer/ */ 
 
 .siteContent {
