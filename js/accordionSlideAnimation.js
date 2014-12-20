@@ -3,7 +3,7 @@
 
 $(document).ready(function() {
   $(".accordion").on("click", "dd", function () {
-    $("dd.active").find(".content").hide();
+   
     if(!$(this).hasClass("active")) {
       $(this).find(".content").slideToggle("medium");
     }
