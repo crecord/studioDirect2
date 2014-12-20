@@ -3,7 +3,7 @@ var index =0;
 
 $(function(){
 	 $('.slideshow').on('click',function(){
-	 	if(index == (bgImgs.length -1)){
+	 	if(index == (slideImgs.length -1)){
 	 		index = 0; 
 	 	}
 	 	else{
@@ -21,7 +21,7 @@ $(document).on('ready',function(){
 
 
 function updateSlideshow(){
-	 	if(index == (bgImgs.length -1)){
+	 	if(index == (slideImgs.length -1)){
 	 		index = 0; 
 	 	}
 	 	else{
