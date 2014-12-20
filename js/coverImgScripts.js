@@ -1,7 +1,7 @@
 
 
 
-var bgImgs = ["BackGroundImg1.jpg", "BackGroundImg2.jpg"];
+var bgImgs = ["BackGroundImg1.jpg", "BackGroundImg2.jpg", "BackGroundImg3.jpg", "BackGroundImg4.jpg", "BackGroundImg5.jpg", "BackGroundImg6.jpg", "BackGroundImg7.jpg", "BackGroundImg8.jpg", "BackGroundImg9.jpg", "BackGroundImg10.jpg"];
 
 
 $(function(){
