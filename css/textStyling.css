@@ -90,6 +90,18 @@ h6.extraSpace{
 	
 } 
 
+h7{
+	font-family: 'Open Sans', sans-serif;  
+	
+	font-weight:bold;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	margin-bottom:5px; 
+} 
+a h7:hover{
+	text-decoration:underline;
+}
+
 
 /* this is the hover text for the main menu items*/
 .hover{
