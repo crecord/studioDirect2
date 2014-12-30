@@ -41,6 +41,9 @@ h4 {
 	font-size: .8rem;
 	margin-bottom:20px;
 } 
+a h4:hover{
+	text-decoration:underline;
+}
 
 
 /*this is all for the structure section of the model content*/ 
