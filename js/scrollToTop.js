@@ -10,10 +10,10 @@
             	$("#article").animate({scrollTop : 0},800);
             	
             	
-            	setTimeout(function() {
+            	setTimeout(function() {		
             		$('html, body').animate({scrollTop : 0},400);
             	}, 800);
-            	
+
 				return false;
             		
             	//$('html, body').animate({scrollTop : 0},800);
