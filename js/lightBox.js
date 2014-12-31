@@ -2,28 +2,30 @@
         	var infoDiv = document.getElementById('info');
         	infoDiv.style.display= 'none';
         	toggle=true;
-        	
-        	document.body.style.overflowY="auto";
-        	
+    
+        	$('html, body').css({'overflow': 'auto',});
         }
         
         function closeFaqsWindow(){
         	var faqsDiv = document.getElementById('faqs');
         	faqsDiv.style.display= 'none';
         	toggle=true;
+        	$('html, body').css({'overflow': 'auto',});
         }
         
         
 $(function(){
 	  $('.info').click(function () {
             $('#info').show();
-            document.body.style.overflowY="hidden";
-            document.getElementById("article").style.overflowY="hidden";
-            $(".scrollOverBody").style.overflowY="hidden";
+           
+            $('html, body').css({'overflow': 'hidden'});
+
+            
         });
     
       $('.faqs').click(function () {
             $('#faqs').show();
+            $('html, body').css({'overflow': 'hidden'});
     });
         
         

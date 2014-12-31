@@ -5,6 +5,10 @@ $(document).ready(function (){
 			
 			
 		function scroll () {
+		//console.log(document.getElementById("info").style.display); 
+		var isInfoWindow = document.getElementById("info").style.display; 
+		if (isInfoWindow == "none"){
+		
 			var position = $(".scrollOverBody").offset().top;
 			
 			var scrollPos = $(document).scrollTop();
@@ -20,7 +24,7 @@ $(document).ready(function (){
 			
 			//console.log(scrollPos-position); 
 		}
-		
+		}
 
         });
 
