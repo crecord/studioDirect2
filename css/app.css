@@ -12,6 +12,8 @@
 			-moz-background-size: cover;
 			-o-background-size: cover;
 			background-size: cover;
+			-webkit-box-shadow: none; 
+			box-shadow: none; 
 		}
 
 
@@ -217,6 +219,7 @@ background: #fff;
 -moz-border-radius:10px;
 border-radius: 10px;
 z-index:3001;
+overflow: scroll;
 }
 
   .about{
@@ -226,12 +229,15 @@ z-index:3001;
 } 
 
 .cross{
- 
+  position:fixed; 
+  right: 10%; 
+    top: 10%; 
   float:right;
   margin-right:10px !important; 
   margin-top:10px;
   -webkit-filter: opacity(.2);
   filter: opacity(.2);
+  z-index:3002;
 }	
 
 .cross:hover{
