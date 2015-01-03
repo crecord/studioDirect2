@@ -41,8 +41,12 @@ top: 40%;
 width:2%; 
 min-width: 10px; 
 height:auto; 
+
+
 -webkit-filter: opacity(.2);
 filter: opacity(.2);
+opacity: 0.2;
+filter: alpha(opacity=20);
 
 } 
 
@@ -51,6 +55,8 @@ filter: opacity(.2);
 	border:1px; 
 	-webkit-filter: opacity(.5);
 	filter: opacity(.5);
+	opacity: 0.5;
+	filter: alpha(opacity=50);
 } 
 
 .left{
@@ -64,7 +70,7 @@ left:2%;
 
 /* main menu styling*/
 #menu-outer {
-	text-align: center;
+	text-align: right;
 	/* right, down, amount of blur, border all around border*/ 
 	-webkit-box-shadow: 0 10px 20px -8px #d8d7d7;
 	   -moz-box-shadow: 0 10px 20px -8px #d8d7d7;
@@ -74,6 +80,7 @@ left:2%;
 .icons{
 	position:absolute;
 	right:1%; 
+	min-width:100px; 
 } 
 
 
@@ -239,6 +246,8 @@ overflow: scroll;
   margin-top:10px;
   -webkit-filter: opacity(.2);
   filter: opacity(.2);
+  opacity: 0.2;
+  filter: alpha(opacity=20);
   z-index:3002;
 }	
 
@@ -247,6 +256,8 @@ overflow: scroll;
 	border:1px; 
 	-webkit-filter: opacity(.5);
 	filter: opacity(.5);
+	opacity: 0.5;
+	filter: alpha(opacity=50);
 }
 
 .overlay {
