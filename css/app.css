@@ -43,8 +43,7 @@ min-width: 10px;
 height:auto; 
 
 
--webkit-filter: opacity(.2);
-filter: opacity(.2);
+
 opacity: 0.2;
 filter: alpha(opacity=20);
 
@@ -53,8 +52,7 @@ filter: alpha(opacity=20);
 .arrow:hover{
 	filter: contrast(20px);
 	border:1px; 
-	-webkit-filter: opacity(.5);
-	filter: opacity(.5);
+	
 	opacity: 0.5;
 	filter: alpha(opacity=50);
 } 
@@ -244,8 +242,7 @@ overflow: scroll;
   float:right;
   margin-right:10px !important; 
   margin-top:10px;
-  -webkit-filter: opacity(.2);
-  filter: opacity(.2);
+
   opacity: 0.2;
   filter: alpha(opacity=20);
   z-index:3002;
@@ -254,8 +251,7 @@ overflow: scroll;
 .cross:hover{
 	filter: contrast(20px);
 	border:1px; 
-	-webkit-filter: opacity(.5);
-	filter: opacity(.5);
+
 	opacity: 0.5;
 	filter: alpha(opacity=50);
 }
