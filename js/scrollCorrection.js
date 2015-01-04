@@ -10,6 +10,20 @@
 $(document).ready(function (){
 		
 		window.onscroll = scroll;
+		document.getElementById("article").onscroll = scroll2; 
+			
+		function scroll2 () {
+			console.log("sup");
+			var theInnerScroll = $("#article").scrollTop();
+			console.log("the scroll: " + theInnerScroll); 
+			if (theInnerScroll == 0){
+				document.getElementById("article").style.overflowY="visible";
+				document.body.style.overflowY="auto";
+				console.log("ping");
+			}
+		}
+			
+			
 					
 		// this function is called whenever the user scrolls	
 		function scroll () {
@@ -25,17 +39,24 @@ $(document).ready(function (){
 		var isFaqsWindow = document.getElementById("faqs").style.display; 
 		if (isInfoWindow == "none" &&  isFaqsWindow== "none"){
 		
+		
+			// this is the height of the window 
 			var position = $(".scrollOverBody").offset().top;
-			
+			// this is where the top of the menu is relative to the bottom of the screen
 			var scrollPos = $(document).scrollTop();
+			//console.log( "scrollPos: "+ position);
+			//console.log( "position: "+ scrollPos);
 			
 			if (scrollPos < position){
+				// if the menu has not traversed the cover image do not allow its content to scroll
 				document.getElementById("article").style.overflowY="visible";
 				document.body.style.overflowY="auto";
+				console.log("ping");
 			}
 			else {
 				document.getElementById("article").style.overflowY="auto";
 				document.body.style.overflowY="hidden";
+				console.log("pong");
 			}
 			
 			//console.log(scrollPos-position); 
