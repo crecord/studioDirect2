@@ -13,13 +13,10 @@ $(document).ready(function (){
 		document.getElementById("article").onscroll = scroll2; 
 			
 		function scroll2 () {
-			console.log("sup");
 			var theInnerScroll = $("#article").scrollTop();
-			console.log("the scroll: " + theInnerScroll); 
 			if (theInnerScroll == 0){
 				document.getElementById("article").style.overflowY="visible";
 				document.body.style.overflowY="auto";
-				console.log("ping");
 			}
 		}
 			
@@ -51,12 +48,12 @@ $(document).ready(function (){
 				// if the menu has not traversed the cover image do not allow its content to scroll
 				document.getElementById("article").style.overflowY="visible";
 				document.body.style.overflowY="auto";
-				console.log("ping");
+				//console.log("ping");
 			}
 			else {
 				document.getElementById("article").style.overflowY="auto";
 				document.body.style.overflowY="hidden";
-				console.log("pong");
+				//console.log("pong");
 			}
 			
 			//console.log(scrollPos-position); 
