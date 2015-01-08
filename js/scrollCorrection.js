@@ -34,7 +34,8 @@ $(document).ready(function (){
 		
 		var isInfoWindow = document.getElementById("info").style.display; 
 		var isFaqsWindow = document.getElementById("faqs").style.display; 
-		if (isInfoWindow == "none" &&  isFaqsWindow== "none"){
+		var isMobileWindow = document.getElementById("mobileReady").style.display; 
+		if (isInfoWindow == "none" &&  isFaqsWindow== "none" && isMobileWindow =="none"){
 		
 		
 			// this is the height of the window 
@@ -59,7 +60,7 @@ $(document).ready(function (){
 			//console.log(scrollPos-position); 
 		}
 		else{
-
+			console.log("two");
 			$('html,body').animate({scrollTop : scrollPosOne},0);
 		}
 		}

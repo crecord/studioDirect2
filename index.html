@@ -43,6 +43,23 @@
    </head>
    <body onresize="onResize()">
    
+       <!-- not Mobile Ready lightbox window -->
+        <!-- This is located out of the scrollOverBody tag for a reason! otherwise an error will occur when you press info from the hamburger slide out menu -->
+            <div id ='mobileReady' style="display:none;" >
+               <div class="overlay" ></div>
+               <div class='bubble'  style="display:block;">
+                  <div class='about'>
+                     
+                     <h4 style= "float:center;">
+                    StudioDirect.org is still under construction for mobile. Thank you for your patience!
+                     </h4>
+                  </div>
+               </div>
+            </div>
+
+   
+   
+   
    	  <!-- navigation arrows for the cover image-->
       <img src="img/background/arrow_Left.png"  class="arrow left" id= "arrowLeft">
       <img src="img/background/arrow_Right.png" class="arrow right" id= "arrowRight">
