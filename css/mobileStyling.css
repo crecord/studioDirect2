@@ -1,0 +1,31 @@
+
+/* when the screen is less that 737px the following happens*/ 
+@media screen and (max-width: 737px) {
+
+/* the hover text does not display*/ 
+.hoverText{
+ display:none;
+}
+
+.scrollOverBody{
+	margin-top:-45px;
+} 
+
+/* the main menu items "the model" etc. are displayed tighter together*/ 
+button, .button {
+	padding-right: .3rem;
+	padding-left: .3rem; 
+} 
+
+/* the hamburger is slightly smaller */ 
+.hamburger{
+	width:18px; 
+	height: auto; 
+}
+
+/* the lines under the accordion items are black instead of having a hover state*/ 
+dd a hr{
+	background-color:black !important;
+}
+
+}

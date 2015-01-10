@@ -155,23 +155,7 @@ ul#horizontal-list {
 	padding-top:5px; 
 }
 
-@media screen and (max-width: 500px) {
-.hoverText{
- display:none; 
-}
 
-button, .button {
-	padding-right: .3rem;
-	padding-left: .3rem; 
-} 
-
-.hamburger{
-	width:18px; 
-	height: auto; 
-}
-
-
-}
 
 /* this is the foggy background for the hover */ 
 .foggyBackground{

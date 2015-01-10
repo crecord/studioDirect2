@@ -2,13 +2,13 @@
 $(document).ready(function (){
 // this variable also gets used in the scroll correction script        
 var scrollPosOne= 0;
-
+/*
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
  			$('#mobileReady').show();
             scrollPosOne = $(document).scrollTop();
             console.log("one");
 }
-
+*/
     
         function closeInfoWindow(){
         	var infoDiv = document.getElementById('info');

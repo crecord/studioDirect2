@@ -1,6 +1,5 @@
 var slideImgs = ["img1_hands.jpg", "img2_hands.jpg", "img3_hands.jpg", "img4_hands.jpg", "img5_hands.jpg", "img6_hands.jpg"];
-var index =0; 
-
+var index = 0;
 $(function(){
 	 $('.slideshow').on('click',function(){
 	 	if(index == (slideImgs.length -1)){
