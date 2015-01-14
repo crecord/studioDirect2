@@ -2,11 +2,20 @@
  $(document).ready(function (){
 
 var bgImgs = ["BackGroundImg1.jpg", "BackGroundImg2.jpg", "BackGroundImg3.jpg", "BackGroundImg4.jpg", "BackGroundImg5.jpg", "BackGroundImg6.jpg", "BackGroundImg7.jpg", "BackGroundImg8.jpg", "BackGroundImg9.jpg", "BackGroundImg10.jpg"];
-
-
+var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 var index =Math.floor((Math.random() * (bgImgs.length-1)) + 1); 
 console.log("index is: " + index);
-$('html').css({backgroundImage:'url(img/background/'+bgImgs[index]+')'});
+
+if (width <= 900){
+	$('html').css({backgroundImage:'url(img/background/mobile/'+bgImgs[index]+')'});
+}
+
+else {
+	$('html').css({backgroundImage:'url(img/background/'+bgImgs[index]+')'});
+}
+
+
+
 
 	 $('#arrowRight').on('click',function(){
 		console.log("cluck");
@@ -18,7 +27,12 @@ $('html').css({backgroundImage:'url(img/background/'+bgImgs[index]+')'});
 	 		index ++; 
 	 	}
 	 	console.log("index after: "+ index);
-	 	$('html').css({backgroundImage:'url(img/background/'+bgImgs[index]+')'});
+	 	if (width <= 900){
+			$('html').css({backgroundImage:'url(img/background/mobile/'+bgImgs[index]+')'});
+		}
+		else {
+			$('html').css({backgroundImage:'url(img/background/'+bgImgs[index]+')'});
+		}
 	 });
 	 
 	  $('#arrowLeft').on('click',function(){
@@ -28,8 +42,15 @@ $('html').css({backgroundImage:'url(img/background/'+bgImgs[index]+')'});
 	 	else{
 	 		index --; 
 	 	}
-	 	$('html').css({backgroundImage:'url(img/background/'+bgImgs[index]+')'});
+	 	if (width <= 900){
+			$('html').css({backgroundImage:'url(img/background/mobile/'+bgImgs[index]+')'});
+		}
+		else {
+			$('html').css({backgroundImage:'url(img/background/'+bgImgs[index]+')'});
+		}
 	 });
+
+
 
 
 });
