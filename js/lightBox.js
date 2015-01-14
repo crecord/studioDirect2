@@ -1,5 +1,5 @@
 
-$(document).ready(function (){
+
 // this variable also gets used in the scroll correction script        
 var scrollPosOne= 0;
 /*
@@ -40,8 +40,7 @@ $(function(){
 
     });
          
-        
-});
+
 
 
  });
