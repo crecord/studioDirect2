@@ -3,7 +3,7 @@
 /* big centers*/ 
 h1{
 	font-family: 'Open Sans', sans-serif;  
-	font-size: 2.2em;
+	font-size: 2.2rem;
 	font-weight:bold;
 	text-align: center; 
 	margin-top: 20px; 
@@ -99,7 +99,7 @@ h6.extraSpace{
 /* they are smaller so they fit in one line*/
 
 .accordionHeader{
-	font-size: 1.7em;
+	font-size: 1.7rem;
 	
 } 
 

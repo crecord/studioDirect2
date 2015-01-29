@@ -2,6 +2,11 @@
 /* when the screen is less that 737px the following happens*/ 
 @media screen and (max-width: 737px) {
 
+html { 
+  background: url() no-repeat center static:
+}
+
+
 /* the hover text does not display*/ 
 .hoverText{
  display:none;
@@ -26,6 +31,11 @@ button, .button {
 /* the lines under the accordion items are black instead of having a hover state*/ 
 dd a hr{
 	background-color:black !important;
+}
+
+/* gets rid of the arrows to shift background images because they are too small and they don't scroll correctly*/
+.arrow {
+	display:none;
 }
 
 }

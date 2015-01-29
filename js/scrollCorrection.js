@@ -9,6 +9,12 @@
 
 $(document).ready(function (){
 		
+		var isOnMobile = false;
+		if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			isOnMobile = false; 
+		}
+		
+		
 		window.onscroll = scroll;
 		document.getElementById("article").onscroll = scroll2; 
 			
@@ -35,7 +41,8 @@ $(document).ready(function (){
 		var isInfoWindow = document.getElementById("info").style.display; 
 		var isFaqsWindow = document.getElementById("faqs").style.display; 
 		var isMobileWindow = document.getElementById("mobileReady").style.display; 
-		if (isInfoWindow == "none" &&  isFaqsWindow== "none" && isMobileWindow =="none"){
+
+		if (isInfoWindow == "none" &&  isFaqsWindow== "none" && isMobileWindow =="none" && !(isOnMobile) ){
 		
 		
 			// this is the height of the window 
@@ -45,7 +52,7 @@ $(document).ready(function (){
 			//console.log( "scrollPos: "+ position);
 			//console.log( "position: "+ scrollPos);
 			
-			if (scrollPos < position){
+			if (scrollPos < position - 10){
 				// if the menu has not traversed the cover image do not allow its content to scroll
 				document.getElementById("article").style.overflowY="visible";
 				document.body.style.overflowY="auto";
@@ -53,11 +60,18 @@ $(document).ready(function (){
 			}
 			else {
 				document.getElementById("article").style.overflowY="auto";
+				$(document).scrollTop(position);
+				
 				document.body.style.overflowY="hidden";
 				//console.log("pong");
 			}
 			
 			//console.log(scrollPos-position); 
+		}
+		else if (isOnMobile){
+			console.log("is on mobile!");
+			document.getElementById("article").style.overflowY="auto";
+			document.body.style.overflowY="hidden";
 		}
 		else{
 			console.log("two");
