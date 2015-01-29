@@ -1,9 +1,9 @@
 
 /* when the screen is less that 737px the following happens*/ 
-@media screen and (max-width: 737px) {
+@media screen and (max-width: 1000px) {
 
 html { 
-  background: url() no-repeat center static:
+  background: url() no-repeat center;
 }
 
 
@@ -32,9 +32,7 @@ button, .button {
 dd a hr{
 	background-color:black !important;
 }
-
-/* gets rid of the arrows to shift background images because they are too small and they don't scroll correctly*/
-.arrow {
+.arrow{
 	display:none;
 }
 

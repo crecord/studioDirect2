@@ -9,6 +9,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
             // expand accordions when it is a mobile device
             $( "dl" ).removeClass( "accordion" );
             $( "dl dd" ).removeClass( "accordion-navigation" );
+            $("dl dd a").attr("href", " ")
 }
 
 
