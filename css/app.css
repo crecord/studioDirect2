@@ -23,6 +23,7 @@ body{
 	/* Overriding the foundation css so that the studio direct image is visible */
 	background-color:transparent;
 	overflow:visible;
+	min-height: 600px;
 	
 }	
 
